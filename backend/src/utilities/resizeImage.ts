@@ -15,6 +15,7 @@ export const resizeImage = async (
         }${height ? "h:" + height : ""}).jpg`
       );
   } catch (e) {
+    console.log(e);
     throw e;
   }
 };
