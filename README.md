@@ -4,19 +4,33 @@ This project aims to be implementation of understanding Node.js, development wit
 
 ## Files structure
 
-### Server :
 
 - **backend**
   - **src**
   - **build**
   - **spec**
   - **images**
+- **frontend**
+  - **src**
+  - **build**
 
-### Client :
+## Install dependencies and run app
 
-- under development
+### Client
 
-## Install dependencies
+```
+cd frontend
+```
+
+```
+yarn install
+```
+
+```
+yarn start
+```
+
+### Server :
 
 ```
 cd backend
@@ -30,14 +44,3 @@ yarn install
 yarn start
 ```
 
-## Executing program
-
-```
-GET localhost:3000/api/resize?image=<image name in images/full>&width=<number >= 0 or null>&height=<number >= 0 or null>
-```
-
-Example
-
-```
-localhost:3000/api/resize?image=fjord&width=100&height=100
-```
