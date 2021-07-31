@@ -9,14 +9,15 @@ resize.get(
   "/",
   async (req: express.Request, res: express.Response): Promise<void> => {
     // get query and image path
+
     const image = req.query.image as string;
     const width = req.query.width ? parseInt(req.query.width as string) : null;
     const height = req.query.height
       ? parseInt(req.query.height as string)
       : null;
-
+    console.log(image, width, height);
     const inputExist: boolean = checkFileInput(image);
-
+    console.log(inputExist);
     if (inputExist) {
       // atleast one of this not null
       if (width != null || height != null) {
